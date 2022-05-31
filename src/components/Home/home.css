@@ -1,0 +1,15 @@
+/* . {
+  background-color: blue;
+  clip-path: polygon(0 0, 45% 0, 75% 100%, 0% 100%);
+} */
+
+.photo_bg {
+  background-color: red;
+  position: fixed;
+  height: 200%;
+  width: 100%;
+  transform: rotate(-15deg);
+  z-index: -1;
+  left: -75%;
+  top: -50%;
+}
