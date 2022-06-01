@@ -1,19 +1,21 @@
 import React from 'react';
 import myphoto from '../../assets/my_photo.png';
 import './home.css';
-import { BsGithub, BsLinkedin } from 'react-icons/bs';
-import { FaFacebookF } from 'react-icons/fa';
+import { VscGithub } from 'react-icons/vsc';
+import { FiLinkedin, FiFacebook } from 'react-icons/fi';
 import AnimatedCursor from 'react-animated-cursor';
 import TypeAnimation from 'react-type-animation';
+import Header from '../Header/Header';
 
 const Home = () => {
 
   return (
     <div className="hero min-h-screen bg-neutral">
-      <div className="hero-content flex-col lg:flex-row ">
-        <div className='photo_bg bg-gradient-to-r from-secondary to-success'></div>
+      <Header></Header>
+      <div className="hero-content flex-col lg:flex-row mr-24">
+        <div className='photo_bg bg-success'></div>
         <div className='w-2/4'>
-          <img className='bg-base-100 rounded-2xl w-4/5 shadow-2xl' src={myphoto} alt="" />
+          <img className='bg-accent rounded-2xl w-4/5 shadow-2xl' src={myphoto} alt="" />
         </div>
         <div className='w-2/4'>
           <h1 className="text-5xl font-bold uppercase text-success text-bold mb-2">I'm Rasel Ahmmed</h1>
@@ -26,13 +28,13 @@ const Home = () => {
               repeat={Infinity}
             />
           </div>
-          <p className="py-6 text-white">I am an ambitious and hardworking individual with broad skills and experience in Full-stack web develop- ment. I have experience working as part of a team and individually. I am always energetic and eager to learn new skills and techniques. I have been able to deliver my work with a consistent approach throughout a challenging periods.</p>
+          <p className="py-6 mr-10 text-white">I am an ambitious and hardworking individual with broad skills and experience in Full-stack web develop- ment. I have experience working as part of a team and individually. I am always energetic and eager to learn new skills and techniques. I have been able to deliver my work with a consistent approach throughout a challenging periods.</p>
           <button className="btn btn-success">More About Me</button>
 
           <div className='flex gap-5 mt-8'>
-            <a href="https://www.linkedin.com/in/ahmmedrasel-dev/" target='_blank' rel="noreferrer"><BsLinkedin className='text-3xl text-blue-500 shadow-md' /></a>
-            <a href="https://www.linkedin.com/in/ahmmedrasel-dev/" target='_blank' rel='noreferrer'><BsGithub className='text-3xl text-white shadow-md' /></a>
-            <a href="https://www.linkedin.com/in/ahmmedrasel-dev/" target='_blank' rel='noreferrer'><FaFacebookF className='text-3xl text-blue-600 shadow-md' /></a>
+            <a className='border-2 rounded-full p-2 hover:border-success hover:text-success' href="https://www.linkedin.com/in/ahmmedrasel-dev/" target='_blank' rel="noreferrer"><FiLinkedin className='text-2xl shadow-md' /></a>
+            <a className='border-2 rounded-full p-2 hover:border-success hover:text-success' href="https://www.linkedin.com/in/ahmmedrasel-dev/" target='_blank' rel='noreferrer'><VscGithub className='text-2xl shadow-md' /></a>
+            <a className='border-2 rounded-full p-2 hover:border-success hover:text-success' href="https://www.linkedin.com/in/ahmmedrasel-dev/" target='_blank' rel='noreferrer'><FiFacebook className='text-2xl shadow-md' /></a>
           </div>
         </div>
       </div >
