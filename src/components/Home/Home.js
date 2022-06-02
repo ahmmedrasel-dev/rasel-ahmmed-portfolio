@@ -3,15 +3,12 @@ import myphoto from '../../assets/my_photo.png';
 import './home.css';
 import { VscGithub } from 'react-icons/vsc';
 import { FiLinkedin, FiFacebook } from 'react-icons/fi';
-import AnimatedCursor from 'react-animated-cursor';
 import TypeAnimation from 'react-type-animation';
-import Header from '../Header/Header';
 
 const Home = () => {
 
   return (
     <div className="hero min-h-screen bg-neutral">
-      <Header></Header>
       <div className="hero-content flex-col lg:flex-row mr-24">
         <div className='photo_bg bg-success'></div>
         <div className='w-2/4'>
@@ -38,7 +35,6 @@ const Home = () => {
           </div>
         </div>
       </div >
-      <AnimatedCursor />
     </div >
   );
 };

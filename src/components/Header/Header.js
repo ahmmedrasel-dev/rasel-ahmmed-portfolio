@@ -8,14 +8,14 @@ import { HiOutlineViewGrid, HiChat } from 'react-icons/hi';
 
 const Header = () => {
   return (
-    <div className='sideMenu w-80'>
+    <div className='sideMenu w-80 z-40'>
       <ul className='menuItem'>
         <li className='flex flex-row-reverse items-center'>
           <Link className='p-4 bg-slate-700 rounded-full hover:bg-success' to='/'><IoHome className='text-2xl' /></Link>
           <h2>Home</h2>
         </li>
         <li className='flex flex-row-reverse items-center'>
-          <Link className='p-4 bg-slate-700 rounded-full hover:bg-success' to='/'><FaUserAlt className='text-2xl' /></Link>
+          <Link className='p-4 bg-slate-700 rounded-full hover:bg-success' to='/about-me'><FaUserAlt className='text-2xl' /></Link>
           <h2>About Me</h2>
         </li>
         <li className='flex flex-row-reverse items-center'>
