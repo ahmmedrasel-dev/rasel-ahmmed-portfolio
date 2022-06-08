@@ -12,7 +12,7 @@ const Home = () => {
       <div className="hero-content flex-col lg:flex-row lg:mr-24">
         <div className='photo_bg bg-success lg:block hidden'></div>
         <div className='lg:w-2/4'>
-          <img className='bg-accent lg:rounded-2xl lg:w-4/5 w-full rounded-full shadow-2xl' src={myphoto} alt="" />
+          <img className='bg-accent lg:rounded-2xl lg:w-4/5 w-full rounded-lg shadow-2xl' src={myphoto} alt="" />
         </div>
         <div className='lg:w-2/4 w-4/4'>
           <h1 className="lg:text-5xl text-4xl lg:text-left text-center font-bold uppercase text-success text-bold mb-2">I'm Rasel Ahmmed</h1>
