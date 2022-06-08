@@ -1,0 +1,15 @@
+.education {
+  position: relative;
+  z-index: 1;
+}
+
+.education::after {
+  position: absolute;
+  content: '';
+  width: 2px;
+  height: 100%;
+  background: #fff;
+  top: 0;
+  left: 23px;
+  z-index: -1;
+}
