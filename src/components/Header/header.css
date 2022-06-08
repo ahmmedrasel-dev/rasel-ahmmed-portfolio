@@ -6,6 +6,10 @@
   transform: translateY(-50%);
 }
 
+.active {
+  background-color: #037fff;
+}
+
 .sideMenu ul li {
   margin: 20px 0;
 }

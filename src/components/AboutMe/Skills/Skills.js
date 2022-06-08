@@ -6,32 +6,31 @@ const Skills = () => {
       <h2 className='lg:text-5xl text-3xl text-center text-white uppercase font-extrabold'>My Skills</h2>
 
       <div className="mt-8 overflow-x-auto">
-        <table className="table w-full">
-          <tbody>
-            <tr>
-              <th className='lg:text-xl text-sm'>Frontend Technology</th>
-              <td>Javascript, React Js, Html5, Css3, Bootstrap, Tailwind, Firebase, React Query, React Hooks</td>
-            </tr>
-            <tr>
-              <th className='lg:text-xl text-sm'>Backend Techonlogy</th>
-              <td>Node Js, Express Js, PHP, Laravel, MongoDb, Mysql</td>
-            </tr>
-            <tr>
-              <th className='lg:text-xl text-sm'>Comfortable Technology</th>
-              <td>Rest API, Payment Getaway, Context API, JWT-Auth, SASS, Firebase Auth, Firebase Hosting.</td>
-            </tr>
+        <div className="w-full">
+          <div className='flex border p-2 m-2 lg:flex-row flex-col rounded-lg'>
+            <div className='w-[320px]'> <p className='text-lg uppercase'>Frontend Technology</p></div>
+            <div><p className="text-lg">Javascript, React Js, Html5, Css3, Bootstrap, Tailwind, Firebase, React Query, React Hooks</p></div>
+          </div>
 
-            <tr>
-              <th className='lg:text-xl text-sm'>Familier Technology</th>
-              <td>TypeScript, Next Js, React Native, Mongoose.</td>
-            </tr>
+          <div className='flex border p-2 m-2 lg:flex-row flex-col rounded-lg'>
+            <div className='w-[320px]'> <p className='text-lg uppercase'>Backend Technology</p></div>
+            <div><p className="text-lg">Node Js, Express Js, PHP, Laravel, MongoDb, Mysql</p></div>
+          </div>
 
-            <tr>
-              <th className="lg:text-xl text-sm">Tools</th>
-              <td>GitHub, VS Code, Chrome Dev Tools, Heroku, Netlify, Firebase, Postman, Figma, Adobe XD, Photoshop, Illustrator.</td>
-            </tr>
-          </tbody>
-        </table>
+          <div className='flex border p-2 m-2 lg:flex-row flex-col rounded-lg'>
+            <div className='w-[320px]'> <p className='text-lg uppercase'>Comfortable Technology</p></div>
+            <div><p className="text-lg">Rest API, Payment Getaway, Context API, JWT-Auth, SASS, Firebase Auth, Firebase Hosting</p></div>
+          </div>
+
+          <div className='flex border p-2 m-2 lg:flex-row flex-col rounded-lg'>
+            <div className='w-[320px]'> <p className='text-lg uppercase'>Familier Technology</p></div>
+            <div><p className="text-lg">TypeScript, Next Js, React Native, Mongoose.</p></div>
+          </div>
+          <div className='flex border p-2 m-2 lg:flex-row flex-col rounded-lg'>
+            <div className='w-[320px]'> <p className='text-lg uppercase'>Tools</p></div>
+            <div><p className="text-lg">GitHub, VS Code, Chrome Dev Tools, Heroku, Netlify, Firebase, Postman, Figma, Adobe XD, Photoshop, Illustrator</p></div>
+          </div>
+        </div>
       </div>
     </div>
   );

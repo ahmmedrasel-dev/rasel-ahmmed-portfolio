@@ -1,0 +1,68 @@
+[
+  {
+    "_id": 1,
+    "project_name": "Argu Machinaries",
+    "project_thubnail": "https://i.ibb.co/K7V3ZBm/argu-machineries.png",
+    "projects_feature": [
+      "feature one",
+      "feature two",
+      "feature three",
+      "feature four"
+    ],
+    "live_link": "https://argo-machineries.web.app/",
+    "client_site_link": "https://argo-machineries.web.app/",
+    "server_site_link": "https://argo-machineries.web.app/",
+    "project_description": "this project build using React Js.",
+    "technology": ["React Js","Tailwind","Node Js", "MongoDB", "Express Js", "Firebase Auth"]
+  },
+  {
+    "_id": 2,
+    "project_name": "Argu Machinaries",
+    "project_thubnail": "https://i.ibb.co/F7D8JN1/gaming-hub-zone.png",
+    "projects_feature": [
+      "feature one",
+      "feature two",
+      "feature three",
+      "feature four"
+    ],
+    "live_link": "https://argo-machineries.web.app/",
+    "client_site_link": "https://argo-machineries.web.app/",
+    "server_site_link": "https://argo-machineries.web.app/",
+    "project_description": "this project build using React Js.",
+    "technology": ["React Js","Tailwind","Node Js", "MongoDB", "Express Js", "Firebase Auth"]
+  },
+
+  {
+    "_id": 3,
+    "project_name": "Argu Machinaries",
+    "project_thubnail": "https://i.ibb.co/LtJBLwk/local-guide-adventure.png",
+    "projects_feature": [
+      "feature one",
+      "feature two",
+      "feature three",
+      "feature four"
+    ],
+    "live_link": "https://argo-machineries.web.app/",
+    "client_site_link": "https://argo-machineries.web.app/",
+    "server_site_link": "https://argo-machineries.web.app/",
+    "project_description": "this project build using React Js.",
+    "technology": ["React Js","Tailwind","Node Js", "MongoDB", "Express Js", "Firebase Auth"]
+  },
+
+  {
+    "_id": 4,
+    "project_name": "Argu Machinaries",
+    "project_thubnail": "https://i.ibb.co/XyXYj0K/ride-car-house.png",
+    "projects_feature": [
+      "feature one",
+      "feature two",
+      "feature three",
+      "feature four"
+    ],
+    "live_link": "https://argo-machineries.web.app/",
+    "client_site_link": "https://argo-machineries.web.app/",
+    "server_site_link": "https://argo-machineries.web.app/",
+    "project_description": "this project build using React Js.",
+    "technology": ["React Js","Tailwind","Node Js", "MongoDB", "Express Js", "Firebase Auth"]
+  }
+]
