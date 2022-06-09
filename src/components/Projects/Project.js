@@ -23,9 +23,9 @@ const Project = ({ project }) => {
           }
         </ul>
         <div className="flex lg:flex-row flex-col justify-between">
-          <div className='flex gap-4'>
-            <button className="btn btn-warning btn-sm" onClick={() => navigateToPurchase(_id)}>Code Link</button>
+          <div className='flex lg:flex-row flex-col gap-4'>
             <button className='btn btn-sm btn-success'>Live Link</button>
+            <button className="btn btn-warning btn-sm" onClick={() => navigateToPurchase(_id)}>Code Link</button>
             <button className='btn btn-sm btn-success'>Server Code Link</button>
           </div>
         </div>

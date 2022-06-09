@@ -26,8 +26,8 @@ const Home = () => {
             />
           </div>
           <p className="py-6 lg:mr-10 lg:text-left text-center text-white">I am an ambitious and hardworking individual with broad skills and experience in Full-stack web develop- ment. I have experience working as part of a team and individually. I am always energetic and eager to learn new skills and techniques. I have been able to deliver my work with a consistent approach throughout a challenging periods.</p>
-          <button className="btn btn-success mr-2">More About Me</button>
-          <a className='btn btn-success' href="https://drive.google.com/uc?export=download&id=1nHHEZYDAaBm0TZACWobwluFFSYwLYG-M">Downalod Resume</a>
+
+          <a className='btn btn-success' href="https://drive.google.com/uc?export=download&id=1nHHEZYDAaBm0TZACWobwluFFSYwLYG-M">Downalod Resume </a>
 
           <div className='flex gap-5 mt-8'>
             <a className='border-2 rounded-full p-2 hover:border-success hover:text-success' href="https://www.linkedin.com/in/ahmmedrasel-dev/" target='_blank' rel="noreferrer"><FiLinkedin className='text-2xl shadow-md' /></a>

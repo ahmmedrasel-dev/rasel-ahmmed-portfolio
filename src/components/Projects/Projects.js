@@ -16,7 +16,6 @@ const Projects = () => {
       <div className='lg:max-w-7xl max-w-xl lg:mx-auto mx-4 pb-10 mt-10'>
         <h2 className='lg:text-5xl text-3xl text-center uppercase font-extrabold'>My Projects</h2>
 
-
         <div className='max-w-7xl mx-auto my-12'>
           <div className='grid lg:grid-cols-2 grid-cols-1 gap-5'>
             {
