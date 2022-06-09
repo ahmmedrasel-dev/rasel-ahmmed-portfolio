@@ -1,13 +1,7 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 
 const Project = ({ project }) => {
-  const { project_name, project_thubnail, projects_feature, live_link, client_site_link, server_site_link, project_description, technology, _id } = project;
-
-  const navigate = useNavigate();
-  const navigateToPurchase = (id) => {
-    navigate(`/purchase/${id}`);
-  }
+  const { project_name, project_thubnail, projects_feature, live_link, client_site_link, server_site_link } = project;
 
   return (
     <div className="shadow-2xl p-4">
@@ -24,9 +18,11 @@ const Project = ({ project }) => {
         </ul>
         <div className="flex lg:flex-row flex-col justify-between">
           <div className='flex lg:flex-row flex-col gap-4'>
-            <button className='btn btn-sm btn-success'>Live Link</button>
-            <button className="btn btn-warning btn-sm" onClick={() => navigateToPurchase(_id)}>Code Link</button>
-            <button className='btn btn-sm btn-success'>Server Code Link</button>
+            <a className='btn btn-success btn-sm' rel='noreferrer' href={client_site_link} target="_blank">Client Site</a>
+
+            <a className='btn btn-warning btn-sm' rel='noreferrer' href={live_link} target="_blank">Live Site</a>
+
+            <a className='btn btn-success btn-sm' rel='noreferrer' href={server_site_link} target="_blank">Server Site</a>
           </div>
         </div>
 
