@@ -4,64 +4,64 @@
     "project_name": "Argu Machinaries",
     "project_thubnail": "https://i.ibb.co/K7V3ZBm/argu-machineries.png",
     "projects_feature": [
-      "feature one",
-      "feature two",
-      "feature three",
-      "feature four"
+      "User Authentication using Firebase Auth",
+      "Deploy Crud opation for Product Modules",
+      "Create Rest API in Express Js and MonoDB",
+      "Firebase Hosting and Server deploy in Heroku."
     ],
     "live_link": "https://argo-machineries.web.app/",
     "client_site_link": "https://argo-machineries.web.app/",
     "server_site_link": "https://argo-machineries.web.app/",
-    "project_description": "this project build using React Js.",
+    "project_description": "Mern Stact Project for Arugo Machinaries Supplier adn Menufecturer Company.",
     "technology": ["React Js","Tailwind","Node Js", "MongoDB", "Express Js", "Firebase Auth"]
   },
   {
     "_id": 2,
-    "project_name": "Argu Machinaries",
+    "project_name": "Gaming Zone",
     "project_thubnail": "https://i.ibb.co/F7D8JN1/gaming-hub-zone.png",
     "projects_feature": [
-      "feature one",
-      "feature two",
-      "feature three",
-      "feature four"
+      "Gaming Product Review Publish Website",
+      "Display Chart using Chart Js",
+      "Build in React Js & using React Router",
+      "Deploy Client Sit in Netlify."
     ],
-    "live_link": "https://argo-machineries.web.app/",
-    "client_site_link": "https://argo-machineries.web.app/",
-    "server_site_link": "https://argo-machineries.web.app/",
+    "live_link": "https://gamingzone-reveiw.netlify.app/",
+    "client_site_link": "https://github.com/ahmmedrasel-dev/Gaming-Zone-Product-Analaysis.git",
+    "server_site_link": "",
     "project_description": "this project build using React Js.",
     "technology": ["React Js","Tailwind","Node Js", "MongoDB", "Express Js", "Firebase Auth"]
   },
 
   {
     "_id": 3,
-    "project_name": "Argu Machinaries",
+    "project_name": "Local Guide Adventure",
     "project_thubnail": "https://i.ibb.co/LtJBLwk/local-guide-adventure.png",
     "projects_feature": [
-      "feature one",
-      "feature two",
-      "feature three",
-      "feature four"
+      "Socail Login with Google, Facebook and Github",
+      "Local Guide Services Bookig System Implement.",
+      "Mobile Responsive.",
+      "Created Private Route don't allow booking without login"
     ],
-    "live_link": "https://argo-machineries.web.app/",
-    "client_site_link": "https://argo-machineries.web.app/",
-    "server_site_link": "https://argo-machineries.web.app/",
+    "live_link": "https://local-advancer-guide.web.app/",
+    "client_site_link": "https://github.com/ahmmedrasel-dev/local-advanchar-guide",
+    "server_site_link": "",
     "project_description": "this project build using React Js.",
     "technology": ["React Js","Tailwind","Node Js", "MongoDB", "Express Js", "Firebase Auth"]
   },
 
   {
     "_id": 4,
-    "project_name": "Argu Machinaries",
+    "project_name": "Ride Car House",
     "project_thubnail": "https://i.ibb.co/XyXYj0K/ride-car-house.png",
     "projects_feature": [
-      "feature one",
-      "feature two",
-      "feature three",
-      "feature four"
+      "Login Register With Email, Password and Google",
+      "JWT Token Use For Secure The Created API.",
+      "Implement Crud Opation",
+      "Using Firebase Hsoting and Heroku Server Deploy"
     ],
-    "live_link": "https://argo-machineries.web.app/",
-    "client_site_link": "https://argo-machineries.web.app/",
-    "server_site_link": "https://argo-machineries.web.app/",
+    "live_link": "https://ride-carhouse.web.app/",
+    "client_site_link": "https://github.com/ahmmedrasel-dev/ridecarhouse.git",
+    "server_site_link": "https://github.com/ahmmedrasel-dev/ridecarhouse-server.git",
     "project_description": "this project build using React Js.",
     "technology": ["React Js","Tailwind","Node Js", "MongoDB", "Express Js", "Firebase Auth"]
   }

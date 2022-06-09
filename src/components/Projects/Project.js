@@ -10,7 +10,7 @@ const Project = ({ project }) => {
   }
 
   return (
-    <div className="shadow-xl p-4">
+    <div className="shadow-2xl p-4">
       <h2 className="text-2xl uppercase py-4">{project_name}</h2>
 
       <figure><img className='w-full rounded-lg' src={project_thubnail} alt="Album" /></figure>
