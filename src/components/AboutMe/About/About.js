@@ -15,7 +15,7 @@ const About = () => {
             </span>
           </p>
 
-          <button className='btn btn-success mt-5'>Download Resume</button>
+          <a className='btn btn-success' href="https://drive.google.com/uc?export=download&id=1nHHEZYDAaBm0TZACWobwluFFSYwLYG-M">Downalod Resume</a>
         </div>
 
         <div className=''>
