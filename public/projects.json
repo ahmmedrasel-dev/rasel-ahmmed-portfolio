@@ -1,8 +1,22 @@
 [
+  
+
+
+
+
+
+
+
+
+
+
+
   {
-    "_id": 1,
     "project_name": "Argu Machinaries",
     "project_thubnail": "https://i.ibb.co/K7V3ZBm/argu-machineries.png",
+    "img_1": "https://i.ibb.co/WnrjmfR/argo-img-3.png",
+    "img_2": "https://i.ibb.co/HXvL5k5/Argu-img-2.png",
+    "img_3": "https://i.ibb.co/pRhDnqc/iargu-mg-1.png",
     "projects_feature": [
       "User Authentication using Firebase Auth",
       "Deploy Crud opation for Product Modules",
@@ -10,15 +24,17 @@
       "Firebase Hosting and Server deploy in Heroku."
     ],
     "live_link": "https://argo-machineries.web.app/",
-    "client_site_link": "https://argo-machineries.web.app/",
-    "server_site_link": "https://argo-machineries.web.app/",
+    "client_site_link": "https://github.com/ahmmedrasel-dev/Argo-Machineries-Client.git",
+    "server_site_link": "https://github.com/ahmmedrasel-dev/Argu-machineries-server",
     "project_description": "Mern Stact Project for Arugo Machinaries Supplier adn Menufecturer Company.",
     "technology": ["React Js","Tailwind","Node Js", "MongoDB", "Express Js", "Firebase Auth"]
   },
   {
-    "_id": 2,
     "project_name": "Gaming Zone",
     "project_thubnail": "https://i.ibb.co/F7D8JN1/gaming-hub-zone.png",
+    "img_1": "https://i.ibb.co/XDC90gJ/game-hub-img-4.png",
+    "img_2": "https://i.ibb.co/17S0N3n/game-hub-img-6.png",
+    "img_3": "https://i.ibb.co/frSGkth/gamehub-img-5.png",
     "projects_feature": [
       "Gaming Product Review Publish Website",
       "Display Chart using Chart Js",
@@ -33,9 +49,11 @@
   },
 
   {
-    "_id": 3,
     "project_name": "Local Guide Adventure",
     "project_thubnail": "https://i.ibb.co/LtJBLwk/local-guide-adventure.png",
+    "img_1": "https://i.ibb.co/1LHRWVD/local-img-7.png",
+    "img_2": "https://i.ibb.co/Bn01Vcc/local-img-8.png",
+    "img_3": "https://i.ibb.co/vvQBF6r/local-img-9.png",
     "projects_feature": [
       "Socail Login with Google, Facebook and Github",
       "Local Guide Services Bookig System Implement.",
@@ -50,9 +68,11 @@
   },
 
   {
-    "_id": 4,
     "project_name": "Ride Car House",
-    "project_thubnail": "https://i.ibb.co/XyXYj0K/ride-car-house.png",
+    "project_thubnail": "https://i.ibb.co/ykB3jw5/ridecar-img-10.png",
+    "img_1": "https://i.ibb.co/K7V3ZBm/argu-machineries.png",
+    "img_2": "https://i.ibb.co/HT0sdN7/ridecar-img-11.png",
+    "img_3": "https://i.ibb.co/0BBZjx4/ridecar-img-12.png",
     "projects_feature": [
       "Login Register With Email, Password and Google",
       "JWT Token Use For Secure The Created API.",

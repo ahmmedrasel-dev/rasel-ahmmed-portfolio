@@ -3,12 +3,14 @@ import Project from './Project';
 
 
 const Projects = () => {
-  const [project, setProject] = useState([]);
-
+  const [projects, setProjects] = useState([]);
   useEffect(() => {
-    fetch('projects.json')
-      .then(res => res.json())
-      .then(data => setProject(data))
+    const data = async () => {
+      await fetch('http://localhost:5000/projects')
+        .then(res => res.json())
+        .then(data => setProjects(data))
+    }
+    data()
   }, [])
 
   return (
@@ -19,8 +21,8 @@ const Projects = () => {
         <div className='max-w-7xl mx-auto my-12'>
           <div className='grid lg:grid-cols-2 grid-cols-1 gap-5'>
             {
-              project.map((project) => <Project
-                key={project._id}
+              projects.map((project, index) => <Project
+                key={index}
                 project={project}
               >
               </Project>)
