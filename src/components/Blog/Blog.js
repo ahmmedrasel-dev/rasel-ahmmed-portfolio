@@ -7,7 +7,7 @@ const Blog = () => {
     <div className='blog bg-neutral'>
       <div className='blog-inner flex items-center flex-col'>
         <h1 className='text-5xl'>New Blog</h1>
-        <h2 className='text-8xl py-4'>Comming Soon...</h2>
+        <h2 className='text-6xl py-4'>Comming Soon...</h2>
         <FaEdit className='text-5xl' />
       </div>
     </div>
