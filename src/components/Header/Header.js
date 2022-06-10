@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import './header.css';
 import { IoHome } from 'react-icons/io5';
 import { FaUserAlt } from 'react-icons/fa';
+import { BiSpreadsheet } from 'react-icons/bi';
 import { HiOutlineViewGrid, HiChat } from 'react-icons/hi';
 
 
@@ -22,10 +23,17 @@ const Header = () => {
           <NavLink className='p-4 bg-slate-700 rounded-full hover:bg-success' to='/projects'><HiOutlineViewGrid className='text-2xl' /></NavLink>
           <h2>Projects</h2>
         </li>
+
+        <li className='flex lg:flex-row-reverse lg:items-center'>
+          <NavLink className='p-4 bg-slate-700 rounded-full hover:bg-success' to='/blog'><BiSpreadsheet className='text-2xl' /></NavLink>
+          <h2>Blog</h2>
+        </li>
+
         <li className='flex lg:flex-row-reverse lg:items-center'>
           <NavLink className='p-4 bg-slate-700 rounded-full hover:bg-success' to='/contact'><HiChat className='text-2xl' /></NavLink>
           <h2>Contact Us</h2>
         </li>
+
       </ul>
     </div>
   );

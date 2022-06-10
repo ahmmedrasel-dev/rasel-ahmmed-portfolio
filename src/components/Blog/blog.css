@@ -1,0 +1,11 @@
+.blog {
+  position: relative;
+  height: 100vh;
+}
+
+.blog-inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
