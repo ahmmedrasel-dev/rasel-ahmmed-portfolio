@@ -1,16 +1,4 @@
 [
-  
-
-
-
-
-
-
-
-
-
-
-
   {
     "project_name": "Argu Machinaries",
     "project_thubnail": "https://i.ibb.co/K7V3ZBm/argu-machineries.png",
@@ -26,8 +14,8 @@
     "live_link": "https://argo-machineries.web.app/",
     "client_site_link": "https://github.com/ahmmedrasel-dev/Argo-Machineries-Client.git",
     "server_site_link": "https://github.com/ahmmedrasel-dev/Argu-machineries-server",
-    "project_description": "Mern Stact Project for Arugo Machinaries Supplier adn Menufecturer Company.",
-    "technology": ["React Js","Tailwind","Node Js", "MongoDB", "Express Js", "Firebase Auth"]
+    "project_description": "Argu machinaries is a manufecturer company website. where the compnay sell different types of Agriculturer Tools and Machinaries. In this Website we use the Teachlogy for Frontent is React Js, Tailwidn Css. For user Authentication use React Firebase and Firebase hooks. React Router 6 is used for routing different path. For backend technology we use Node js, Express Js and Mongodb databse. Make rest api for use the data. All rest api is secure usign JWT web token. International Payment getway Stripe is Used Here. And Implement lots of feautre for user intarective.",
+    "technology": ["React Js","Tailwind","Node Js", "MongoDB", "Express Js", "Firebase Auth", "JWT", "Axios", "Heroku", "React Query"]
   },
   {
     "project_name": "Gaming Zone",
@@ -44,8 +32,8 @@
     "live_link": "https://gamingzone-reveiw.netlify.app/",
     "client_site_link": "https://github.com/ahmmedrasel-dev/Gaming-Zone-Product-Analaysis.git",
     "server_site_link": "",
-    "project_description": "this project build using React Js.",
-    "technology": ["React Js","Tailwind","Node Js", "MongoDB", "Express Js", "Firebase Auth"]
+    "project_description": "Gaming Zone is the product analysic website. which is build in react js and React Bootstrap. In this site use React router 6. As well use chart js for dispaly different type of chart for dispaly data into graph.",
+    "technology": ["React Js","React Router 6","React Bootsrap", "Netlify"]
   },
 
   {
@@ -63,7 +51,7 @@
     "live_link": "https://local-advancer-guide.web.app/",
     "client_site_link": "https://github.com/ahmmedrasel-dev/local-advanchar-guide",
     "server_site_link": "",
-    "project_description": "this project build using React Js.",
+    "project_description": "Local Guide Adventure website build in React Js. Here also use React Bootstrap for design frontend. React Route 6 is use here. For use authentication use React Firebase Auth and react firebase hooks. User can login and register user email and passwrod. As well here implement socail login Google, Facebook, Girhub profile. User can book any service. Without user login use can not booking service.",
     "technology": ["React Js","Tailwind","Node Js", "MongoDB", "Express Js", "Firebase Auth"]
   },
 
@@ -82,7 +70,7 @@
     "live_link": "https://ride-carhouse.web.app/",
     "client_site_link": "https://github.com/ahmmedrasel-dev/ridecarhouse.git",
     "server_site_link": "https://github.com/ahmmedrasel-dev/ridecarhouse-server.git",
-    "project_description": "this project build using React Js.",
+    "project_description": "Ride Car House is a werehouse management system simple version. In this Website we use the Teachlogy for Frontent is React Js, Tailwidn Css. For user Authentication use React Firebase and Firebase hooks. React Router 6 is used for routing different path. For backend technology we use Node js, Express Js and Mongodb databse. Using JTW web token to secure all rest api. This website server deploy in Heroku.",
     "technology": ["React Js","Tailwind","Node Js", "MongoDB", "Express Js", "Firebase Auth"]
   }
 ]
