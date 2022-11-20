@@ -1,4 +1,3 @@
-import AnimatedCursor from 'react-animated-cursor';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import AboutMe from './components/AboutMe/AboutMe/AboutMe';
@@ -19,17 +18,20 @@ import Dashboard from './Dashboard/Dashboard';
 import RequireAuth from './components/RequireAuth/RequireAuth';
 import HeaderTop from './components/Header/HeaderTop';
 import Blogs from './Dashboard/Blogs/Blogs';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from './firebase.init';
 
 function App() {
   const [header, setHeader] = useState(true)
   const [headerTop, setHeaderTop] = useState(false)
+  const [user] = useAuthState(auth);
   return (
     <div>
       {
         header && <Header></Header>
       }
       {
-        headerTop && <HeaderTop></HeaderTop>
+        (headerTop || user) && <HeaderTop></HeaderTop>
       }
 
       <Routes>

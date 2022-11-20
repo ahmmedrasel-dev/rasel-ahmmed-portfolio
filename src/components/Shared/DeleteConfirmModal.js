@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React from 'react';
 import { toast } from 'react-toastify';
+import axiosPrivate from '../../Api/AxiosPrivate';
 
 const DeleteConfirmModal = ({ deleteBlog, refetch, setDeleteBlog }) => {
   const { _id } = deleteBlog;
@@ -8,7 +9,7 @@ const DeleteConfirmModal = ({ deleteBlog, refetch, setDeleteBlog }) => {
   const handDelete = () => {
 
     const deleteProd = async () => {
-      const response = await axios.delete(`http://localhost:5000/blog/${_id}`);
+      const response = await axiosPrivate.delete(`http://localhost:5000/blog/${_id}`);
       if (response.status === 200) {
         toast.success(`Blog is Deleted!`)
         setDeleteBlog(null)

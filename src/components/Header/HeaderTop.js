@@ -1,14 +1,16 @@
 import { signOut } from 'firebase/auth';
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 
 const HeaderTop = () => {
+  const navigate = useNavigate();
   const [user] = useAuthState(auth)
   const logOut = () => {
     signOut(auth)
     localStorage.removeItem('accessToken')
+    navigate('/');
   }
   return (
     <div className="navbar bg-neutral">

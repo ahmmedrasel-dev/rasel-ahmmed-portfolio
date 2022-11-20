@@ -1,17 +1,25 @@
-import axios from 'axios';
+import { signOut } from 'firebase/auth';
 import React from 'react';
 import { useQuery } from 'react-query';
+import { useNavigate } from 'react-router-dom';
+import axiosPrivate from '../../Api/AxiosPrivate';
 import { Loading } from '../../components/Loading/Loading';
+import auth from '../../firebase.init';
 import Blog from './Blog';
 
 const Blogs = () => {
+  const navigate = useNavigate();
   const { data: blogs, isLoading, refetch } = useQuery('blogs',
     async () => {
       try {
-        const { data } = await axios.get('http://localhost:5000/blogs');
+        const { data } = await axiosPrivate.get('http://localhost:5000/blogs');
         return data;
       } catch (error) {
-        console.log(error.message)
+        if (error.response.status === 401 || error.response.status === 403) {
+          signOut(auth);
+          localStorage.removeItem('accessToken');
+          navigate('/')
+        }
       }
     }
   )
@@ -20,16 +28,32 @@ const Blogs = () => {
     return <Loading></Loading>
   }
   return (
-    <div>
-      {
-        blogs.map((item, index) => <Blog
-          key={index}
-          sl={index}
-          blog={item}
-          refetch={refetch}
-        ></Blog>)
-      }
+
+    <div className="overflow-x-auto mt-6">
+      <table className="table table-compact w-full">
+        <thead>
+          <tr>
+            <th>Sl</th>
+            <th>Images</th>
+            <th>Post Title</th>
+            <th>Category</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          {
+            blogs.map((item, index) => <Blog
+              key={index}
+              sl={index}
+              blog={item}
+              refetch={refetch}
+            ></Blog>)
+          }
+        </tbody>
+      </table>
+
     </div>
+
   );
 };
 

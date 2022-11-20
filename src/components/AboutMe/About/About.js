@@ -15,7 +15,7 @@ const About = () => {
             </span>
           </p>
 
-          <a className='btn btn-success' href="https://drive.google.com/uc?export=download&id=1nHHEZYDAaBm0TZACWobwluFFSYwLYG-M">Downalod Resume</a>
+          <a className='btn btn-success mt-5' href="https://drive.google.com/uc?export=download&id=1nHHEZYDAaBm0TZACWobwluFFSYwLYG-M">Downalod Resume</a>
         </div>
 
         <div className=''>
@@ -23,9 +23,9 @@ const About = () => {
           <ul className='personal_info'>
             <li>Name: <span className='text-white text-md lg:text-xl font-bold'>Rasel Ahmmed</span></li>
             <li>Email: <span className='text-white text-md lg:text-xl font-bold'>rahmmed.info@gmail.com</span></li>
-            <li>Phone: <span className='text-white text-md lg:text-xl font-bold'>966572868132</span></li>
-            <li>Nationality: <span className='text-white font-bold'>Bangladeshi</span></li>
-            <li>Address: <span className='text-white text-md lg:text-xl font-bold'>Dammam, Saudi Arabia</span></li>
+            <li>Phone: <span className='text-white text-md lg:text-xl font-bold'>+8801744801781</span></li>
+
+            <li>Address: <span className='text-white text-md lg:text-xl font-bold'>Cumilla, Bangladesh</span></li>
             <li>Language: <span className='text-white text-md lg:text-xl font-bold'>Bangeli, English, Arabic</span></li>
             <li>Skype: <span className='text-white text-md lg:text-xl font-bold'>rasel_47</span></li>
           </ul>

@@ -1,14 +1,47 @@
+import axios from 'axios';
 import React from 'react';
-import { FaEdit } from 'react-icons/fa';
+import { useQuery } from 'react-query';
+import { Loading } from '../Loading/Loading';
 import './blog.css';
 
 const Blog = () => {
+  const { data: blogs, isLoading } = useQuery('blogs',
+    async () => {
+      try {
+        const { data } = await axios.get('http://localhost:5000/allblogs');
+        return data;
+      } catch (error) {
+        console.log(error)
+      }
+    }
+  )
+  // console.log(blogs)
+
+  if (isLoading) {
+    return <Loading></Loading>
+  }
   return (
-    <div className='blog bg-neutral'>
-      <div className='blog-inner flex items-center flex-col'>
-        <h1 className='text-5xl'>New Blog</h1>
-        <h2 className='text-6xl py-4'>Comming Soon...</h2>
-        <FaEdit className='text-5xl' />
+    <div className='blog bg-neutral '>
+      <div className='max-w-7xl  mx-auto '>
+        <h1 className='py-10 text-2xl uppercase'>Latest Blog</h1>
+        <div className='grid grid-cols-3 gap-6'>
+          {
+            blogs.map(item => (
+              <div className="card bg-base-100 shadow-xl image-full">
+                <figure><img src={item.thumbnail} alt="Shoes" /></figure>
+                <div className="card-body">
+                  <h2 className="card-title">{item.title}</h2>
+                  <p dangerouslySetInnerHTML={{ __html: item.content.slice(0, 60) + ' ...' }}></p>
+                  <div className="card-actions justify-end">
+                    <button className="btn btn-primary btn-sm" >Read More</button>
+                  </div>
+                </div>
+              </div>
+            ))
+          }
+
+
+        </div>
       </div>
     </div>
   );

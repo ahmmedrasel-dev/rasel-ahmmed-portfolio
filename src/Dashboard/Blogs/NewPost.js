@@ -3,11 +3,12 @@ import { Editor } from '@tinymce/tinymce-react';
 import { Helmet } from 'react-helmet-async';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
-import axios from 'axios';
+import axiosPrivate from '../../Api/AxiosPrivate';
+import slugify from 'react-slugify';
 
 const NewPost = () => {
   const editorRef = useRef(null);
-  const [content, setContent] = useState('')
+  const [content, setContent] = useState('');
 
   const {
     register,
@@ -35,15 +36,17 @@ const NewPost = () => {
       .then(res => res.json())
       .then(result => {
         const imgurl = result.data.url;
+        const slug = slugify(title)
         const blog = {
           title: title,
+          slug: slug,
           category: category,
           thumbnail: imgurl,
           content: content,
         }
         try {
           const sendPost = async () => {
-            const { data } = await axios.post('http://localhost:5000/add-blog', blog);
+            const { data } = await axiosPrivate.post('http://localhost:5000/add-blog', blog);
             if (data.success) {
               toast.success(data.message);
               reset();
