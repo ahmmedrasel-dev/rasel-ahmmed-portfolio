@@ -29,9 +29,7 @@ const Project = ({ project }) => {
             <a className='btn btn-success btn-sm' rel='noreferrer' href={live_link} target="_blank">Live Site</a>
 
             <button className='btn btn-warning btn-sm' onClick={() => navigateToDetails(_id)}>Explore More <FiArrowUpRight /></button>
-            {/* <a className='btn btn-warning btn-sm' rel='noreferrer' href={live_link} target="_blank">Live Site</a>
-
-            <a className='btn btn-success btn-sm' rel='noreferrer' href={server_site_link} target="_blank">Server Site</a> */}
+            
           </div>
         </div>
 

@@ -9,22 +9,52 @@ import Home from './components/Home/Home';
 import Notfound from './components/NotFount/Notfound';
 import ProjectDetails from './components/Projects/ProjectDetails';
 import Projects from './components/Projects/Projects';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import SignIn from './components/SignInSignup/SignIn';
+import SignUp from './components/SignInSignup/SignUp';
+import { useState } from 'react';
+import NewPost from './Dashboard/Blogs/NewPost';
+import Dashboard from './Dashboard/Dashboard';
+import RequireAuth from './components/RequireAuth/RequireAuth';
+import HeaderTop from './components/Header/HeaderTop';
+import Blogs from './Dashboard/Blogs/Blogs';
 
 function App() {
+  const [header, setHeader] = useState(true)
+  const [headerTop, setHeaderTop] = useState(false)
   return (
     <div>
-      <Header></Header>
+      {
+        header && <Header></Header>
+      }
+      {
+        headerTop && <HeaderTop></HeaderTop>
+      }
+
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/about-me' element={<AboutMe></AboutMe>}></Route>
         <Route path="/projects" element={<Projects></Projects>}></Route>
         <Route path='/project/:id' element={<ProjectDetails></ProjectDetails>}></Route>
+        <Route path='/dashboard' element={
+          <RequireAuth><Dashboard
+            header={setHeader}
+            headerTop={setHeaderTop}
+          ></Dashboard></RequireAuth>
+        }>
+          <Route path='post' element={<Blogs></Blogs>}></Route>
+          <Route path='addpost' element={<NewPost></NewPost>}></Route>
+        </Route>
+
+        <Route path="/login" element={<SignIn header={setHeader}></SignIn>}></Route>
+        <Route path="/register" element={<SignUp header={setHeader}></SignUp>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
         <Route path="/contact" element={<ContactMe></ContactMe>}></Route>
         <Route path="/*" element={<Notfound></Notfound>}></Route>
       </Routes>
-      <AnimatedCursor />
-    </div>
+      <ToastContainer />
+    </div >
   );
 }
 
