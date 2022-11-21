@@ -12,7 +12,7 @@ const Blogs = () => {
   const { data: blogs, isLoading, refetch } = useQuery('blogs',
     async () => {
       try {
-        const { data } = await axiosPrivate.get('http://localhost:5000/blogs');
+        const { data } = await axiosPrivate.get('https://rasel-web-server.onrender.com/blogs');
         return data;
       } catch (error) {
         if (error.response.status === 401 || error.response.status === 403) {

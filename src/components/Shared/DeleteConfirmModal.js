@@ -9,7 +9,7 @@ const DeleteConfirmModal = ({ deleteBlog, refetch, setDeleteBlog }) => {
   const handDelete = () => {
 
     const deleteProd = async () => {
-      const response = await axiosPrivate.delete(`http://localhost:5000/blog/${_id}`);
+      const response = await axiosPrivate.delete(`https://rasel-web-server.onrender.com/blog/${_id}`);
       if (response.status === 200) {
         toast.success(`Blog is Deleted!`)
         setDeleteBlog(null)

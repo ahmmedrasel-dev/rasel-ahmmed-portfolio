@@ -6,7 +6,7 @@ const Projects = () => {
   const [projects, setProjects] = useState([]);
   useEffect(() => {
     const data = async () => {
-      await fetch('http://localhost:5000/projects')
+      await fetch('https://rasel-web-server.onrender.com/projects')
         .then(res => res.json())
         .then(data => setProjects(data))
     }

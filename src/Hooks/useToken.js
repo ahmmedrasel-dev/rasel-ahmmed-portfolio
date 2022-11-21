@@ -9,7 +9,7 @@ const useToken = user => {
     const getToken = async () => {
       const email = user?.user?.email
       if (email) {
-        const { data } = await axiosPrivate.post(`http://localhost:5000/user/${email}`)
+        const { data } = await axiosPrivate.post(`https://rasel-web-server.onrender.com/user/${email}`)
         localStorage.setItem('accessToken', data)
         setToken(data);
       }

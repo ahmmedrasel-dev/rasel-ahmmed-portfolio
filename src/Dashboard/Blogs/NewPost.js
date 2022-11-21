@@ -46,7 +46,7 @@ const NewPost = () => {
         }
         try {
           const sendPost = async () => {
-            const { data } = await axiosPrivate.post('http://localhost:5000/add-blog', blog);
+            const { data } = await axiosPrivate.post('https://rasel-web-server.onrender.com/add-blog', blog);
             if (data.success) {
               toast.success(data.message);
               reset();

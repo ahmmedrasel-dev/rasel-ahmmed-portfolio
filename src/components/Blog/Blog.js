@@ -8,7 +8,7 @@ const Blog = () => {
   const { data: blogs, isLoading } = useQuery('blogs',
     async () => {
       try {
-        const { data } = await axios.get('http://localhost:5000/allblogs');
+        const { data } = await axios.get('https://rasel-web-server.onrender.com/allblogs');
         return data;
       } catch (error) {
         console.log(error)
