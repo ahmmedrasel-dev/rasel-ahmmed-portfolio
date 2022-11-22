@@ -20,6 +20,7 @@ import HeaderTop from './components/Header/HeaderTop';
 import Blogs from './Dashboard/Blogs/Blogs';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from './firebase.init';
+import BlogDetails from './components/Blog/BlogDetails';
 
 function App() {
   const [header, setHeader] = useState(true)
@@ -52,6 +53,7 @@ function App() {
         <Route path="/login" element={<SignIn header={setHeader}></SignIn>}></Route>
         <Route path="/register" element={<SignUp header={setHeader}></SignUp>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
+        <Route path="/blog/:slug" element={<BlogDetails></BlogDetails>}></Route>
         <Route path="/contact" element={<ContactMe></ContactMe>}></Route>
         <Route path="/*" element={<Notfound></Notfound>}></Route>
       </Routes>

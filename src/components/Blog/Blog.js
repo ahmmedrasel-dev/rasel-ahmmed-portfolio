@@ -1,10 +1,13 @@
 import axios from 'axios';
 import React from 'react';
 import { useQuery } from 'react-query';
+import { useNavigate } from 'react-router-dom';
+
 import { Loading } from '../Loading/Loading';
 import './blog.css';
 
 const Blog = () => {
+
   const { data: blogs, isLoading } = useQuery('blogs',
     async () => {
       try {
@@ -15,7 +18,10 @@ const Blog = () => {
       }
     }
   )
-  // console.log(blogs)
+  const navigate = useNavigate();
+  const handleReadMore = slug => {
+    navigate(`/blog/${slug}`);
+  }
 
   if (isLoading) {
     return <Loading></Loading>
@@ -33,7 +39,7 @@ const Blog = () => {
                   <h2 className="card-title">{item.title}</h2>
                   <p dangerouslySetInnerHTML={{ __html: item.content.slice(0, 60) + ' ...' }}></p>
                   <div className="card-actions justify-end">
-                    <button className="btn btn-primary btn-sm" >Read More</button>
+                    <button className="btn btn-primary btn-sm" onClick={() => handleReadMore(item.slug)}>Read More</button>
                   </div>
                 </div>
               </div>

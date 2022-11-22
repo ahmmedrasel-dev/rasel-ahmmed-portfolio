@@ -18,6 +18,7 @@ const Blog = ({ blog, sl, refetch }) => {
         <td>{title}</td>
         <td>{category}</td>
         <td>
+          <label htmlFor="delete-modal" className="btn btn-sm bg-green-600">Edit</label>
           <label htmlFor="delete-modal" onClick={() => setDeleteBlog(blog)} className="btn btn-sm bg-red-600">Delete</label>
         </td>
       </tr>
