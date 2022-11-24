@@ -42,8 +42,8 @@ const Home = () => {
 
             <div className='flex gap-5 mt-8'>
               <a className='border-2 rounded-full p-2 hover:border-success hover:text-success' href="https://www.linkedin.com/in/ahmmedrasel-dev/" target='_blank' rel="noreferrer"><FiLinkedin className='text-2xl shadow-md' /></a>
-              <a className='border-2 rounded-full p-2 hover:border-success hover:text-success' href="https://www.linkedin.com/in/ahmmedrasel-dev/" target='_blank' rel='noreferrer'><VscGithub className='text-2xl shadow-md' /></a>
-              <a className='border-2 rounded-full p-2 hover:border-success hover:text-success' href="https://www.linkedin.com/in/ahmmedrasel-dev/" target='_blank' rel='noreferrer'><FiFacebook className='text-2xl shadow-md' /></a>
+              <a className='border-2 rounded-full p-2 hover:border-success hover:text-success' href="https://github.com/ahmmedrasel-dev" target='_blank' rel='noreferrer'><VscGithub className='text-2xl shadow-md' /></a>
+              <a className='border-2 rounded-full p-2 hover:border-success hover:text-success' href="https://www.facebook.com/ahmmedraseldev" target='_blank' rel='noreferrer'><FiFacebook className='text-2xl shadow-md' /></a>
             </div>
           </div>
         </div >
