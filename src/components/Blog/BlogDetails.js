@@ -12,6 +12,7 @@ const BlogDetails = () => {
     try {
       const getDetails = async () => {
         const { data } = await axios.get(`https://rasel-web-server.onrender.com/blog/${slug}`);
+
         setBlogDetails(data);
       }
       getDetails()

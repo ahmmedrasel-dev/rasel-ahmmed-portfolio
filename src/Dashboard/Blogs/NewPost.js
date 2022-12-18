@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
 import axiosPrivate from '../../Api/AxiosPrivate';
-import slugify from 'react-slugify';
+import slugify from 'react-url-slugify';
 
 const NewPost = () => {
   const editorRef = useRef(null);

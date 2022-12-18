@@ -23,6 +23,7 @@
     "react-slugify": "^2.1.0",
     "react-toastify": "^9.1.1",
     "react-type-animation": "^1.1.3",
+    "react-url-slugify": "^0.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
