@@ -20,8 +20,7 @@ const Blog = () => {
   )
   const navigate = useNavigate();
   const handleReadMore = slug => {
-    console.log(slug)
-    // navigate(`/blog/${slug}`);
+    navigate(`/blog/${slug}`);
   }
 
   if (isLoading) {
@@ -40,7 +39,7 @@ const Blog = () => {
                   <h2 className="card-title">{item.title}</h2>
                   <p dangerouslySetInnerHTML={{ __html: item.content.slice(0, 60) + ' ...' }}></p>
                   <div className="card-actions justify-end">
-                    <button className="btn btn-primary btn-sm" onClick={() => handleReadMore(item.slug)}>{item.slug}</button>
+                    <button className="btn btn-primary btn-sm" onClick={() => handleReadMore(item.slug)}>Read More</button>
                   </div>
                 </div>
               </div>

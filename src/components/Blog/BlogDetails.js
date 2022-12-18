@@ -24,14 +24,12 @@ const BlogDetails = () => {
 
   return (
     <div className='bg-neutral'>
-      <div className='max-w-7xl  mx-auto'>
-        <h1 className='py-10 text-2xl uppercase'>{blogDetails.title}</h1>
-        <div>
+      <div className='max-w-7xl  mx-auto pb-8'>
+        <h1 className='py-10 text-2xl uppercase font-extrabold'>{blogDetails.title}</h1>
+        <div className='mb-8'>
           <img src={blogDetails.thumbnail} alt="" />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: blogDetails.content }}>
-
-        </div>
+        <div dangerouslySetInnerHTML={{ __html: blogDetails.content }} />
       </div>
     </div>
   );
