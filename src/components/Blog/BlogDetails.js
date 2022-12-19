@@ -27,7 +27,7 @@ const BlogDetails = () => {
 
   return (
     <div className='bg-neutral'>
-      <div className='max-w-4xl  mx-auto pb-8'>
+      <div className='lg:max-w-5xl  mx-auto lg:pb-8 px-6 pb-24'>
         <div className='pt-8'>
           <img className='w-full' src={blogDetails.thumbnail} alt="" />
         </div>

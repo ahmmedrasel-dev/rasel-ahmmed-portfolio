@@ -28,9 +28,9 @@ const Blog = () => {
   }
   return (
     <div className='blog bg-neutral pb-10'>
-      <div className='max-w-5xl  mx-auto '>
-        <h1 className='py-10 text-2xl uppercase'>Latest Blog</h1>
-        <div className='grid grid-cols-2 gap-6'>
+      <div className='lg:max-w-5xl max-w-xl lg:mx-auto px-4'>
+        <h1 className='lg:text-3xl text-2xl uppercase font-extrabold py-10'>Latest Blog</h1>
+        <div className='grid lg:grid-cols-2 grid-cols-1 gap-5'>
           {
             blogs.map(item => (
               <div className="card bg-base-100 shadow-xl image-full">
