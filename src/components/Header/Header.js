@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import './header.css';
 import { IoHome } from 'react-icons/io5';
-import { FaUserAlt } from 'react-icons/fa';
+import { FaNewspaper, FaUserAlt } from 'react-icons/fa';
 import { BiSpreadsheet } from 'react-icons/bi';
 import { HiOutlineViewGrid, HiChat } from 'react-icons/hi';
 
@@ -12,7 +12,7 @@ const Header = () => {
 
   return (
     <>
-      <div className='sideMenu lg:w-80 w-full z-40'>
+      <div className='sideMenu lg:w-52 w-full z-40'>
         <ul className='menuItem'>
           <li className='flex lg:flex-row-reverse lg:items-center'>
             <NavLink className='p-4 bg-slate-700 rounded-full hover:bg-success' to='/'><IoHome className='text-2xl' /></NavLink>
@@ -28,13 +28,13 @@ const Header = () => {
           </li>
 
           <li className='flex lg:flex-row-reverse lg:items-center'>
-            <NavLink className='p-4 bg-slate-700 rounded-full hover:bg-success' to='/blog'><BiSpreadsheet className='text-2xl' /></NavLink>
+            <NavLink className='p-4 bg-slate-700 rounded-full hover:bg-success' to='/blog'><FaNewspaper className='text-2xl' /></NavLink>
             <h2>Blog</h2>
           </li>
 
           <li className='flex lg:flex-row-reverse lg:items-center'>
             <NavLink className='p-4 bg-slate-700 rounded-full hover:bg-success' to='/contact'><HiChat className='text-2xl' /></NavLink>
-            <h2>Contact Us</h2>
+            <h2>Contact</h2>
           </li>
 
         </ul>
