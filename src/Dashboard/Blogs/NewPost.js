@@ -102,17 +102,25 @@ const NewPost = () => {
               })}
             >
               <option disabled selected>Choose Category</option>
-              <option value='react'>React</option>
-              <option value='node js'>Node Js</option>
-              <option value='express js'>Express Js</option>
-              <option value='php'>Php</option>
-              <option value='laravel'>Laravel</option>
+              <option value='Html'>Html</option>
+              <option value='CSS'>CSS</option>
+              <option value='Javasctip'>Javasctip</option>
+              <option value='PHP'>Php</option>
+              <option value='React Js'>React Js</option>
+              <option value='React Native'>React Native</option>
+              <option value='Typescript'>Typescript</option>
+              <option value='Node Js'>Node Js</option>
+              <option value='Express Js'>Express Js</option>
+              <option value='Laravel'>Laravel</option>
+              <option value='Tailwind'>Tailwind</option>
+              <option value='MongoDb'>MongoDb</option>
+              <option value='General'>General</option>
             </select>
             <label className="label">
               {errors.category?.type === 'required' && <span className="label-text-alt text-red-500">{errors?.category?.message}</span>}
             </label>
 
-            <label htmlFor="" className='text-neutral'> Post Content</label>
+            <label htmlFor="" className='text-neutral'>Post Content</label>
 
             <Editor
 
