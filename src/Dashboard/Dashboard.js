@@ -17,8 +17,8 @@ const Dashboard = ({ header, headerTop }) => {
       <div className="drawer-side">
         <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
         <ul className="menu p-4 overflow-y-auto w-60 bg-base-300 text-base-content">
-          <li><Link to="/dashboard/post">Manage Post</Link></li>
-          <li><Link to="/dashboard/addpost">Add Post</Link></li>
+          <li><Link className='text-white' to="/dashboard/post">Manage Post</Link></li>
+          <li><Link className='text-white' to="/dashboard/addpost">Add Post</Link></li>
         </ul>
 
       </div>

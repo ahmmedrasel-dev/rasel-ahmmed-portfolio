@@ -9,6 +9,7 @@ import slugify from 'react-url-slugify';
 const NewPost = () => {
   const editorRef = useRef(null);
   const [content, setContent] = useState('');
+  let currentDate = new Date().toJSON().slice(0, 10);
 
   const {
     register,
@@ -37,12 +38,14 @@ const NewPost = () => {
       .then(result => {
         const imgurl = result.data.url;
         const slug = slugify(title)
+
         const blog = {
           title: title,
           slug: slug,
           category: category,
           thumbnail: imgurl,
           content: content,
+          create_at: currentDate
         }
         try {
           const sendPost = async () => {
@@ -74,9 +77,9 @@ const NewPost = () => {
         <div className='md:w-5/6 sm:w-4/6 md:h-82 py-8 md:mx-auto flex flex-col justify-center bg-slate-100 border-2 rounded-3xl'>
 
           <form className='sm:w-4/4 md:w-3/4 mx-auto mt-4' onSubmit={handleSubmit(onSubmit)}>
-            <label htmlFor=""> Post Title</label>
+            <label htmlFor="title" className='text-neutral'>Post Title</label>
             <input
-              className='block w-full p-3 mb-3 rounded-md text-md' type="text"
+              className='block w-full p-3 mb-3 text-neutral rounded-md text-md' id='title' type="text"
               placeholder='Post title'
               {...register("title", {
                 required: {
@@ -89,8 +92,8 @@ const NewPost = () => {
               {errors.title?.type === 'required' && <span className="label-text-alt text-red-500">{errors?.title?.message}</span>}
             </label>
 
-            <label htmlFor="">Post Category</label>
-            <select className="select w-full bg-white mb-2"
+            <label htmlFor="" className='text-neutral'>Post Category</label>
+            <select className="select w-full bg-neutral mb-2"
               {...register("category", {
                 required: {
                   value: true,
@@ -109,17 +112,19 @@ const NewPost = () => {
               {errors.category?.type === 'required' && <span className="label-text-alt text-red-500">{errors?.category?.message}</span>}
             </label>
 
-            <label htmlFor=""> Post Content</label>
+            <label htmlFor="" className='text-neutral'> Post Content</label>
 
             <Editor
+
               apiKey='iwykjm8q6ce2q54w49ioaeg10mpydsahr5g3imomj3p3ykn1'
               onInit={(evt, editor) => editorRef.current = editor}
               onEditorChange={handleContent}
             />
 
+            <label htmlFor="" className='text-neutral mb-2'> Upload Image</label>
             <input
               type="file"
-              className="input input-bordered w-full"
+              className="input input-bordered bg-neutral w-full mt-2"
               {...register("image", {
                 required: {
                   value: true,
@@ -127,13 +132,14 @@ const NewPost = () => {
                 }
               })}
             />
+
             <label className="label">
               {errors.image?.type === 'required' && <span className="label-text-alt text-red-500">{errors?.image?.message}</span>}
             </label>
 
             <input
               type="submit"
-              className="btn btn-accent uppercase"
+              className="btn btn-bg-neutral uppercase"
               value="Save Post"
             />
           </form>

@@ -2,10 +2,13 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { FacebookIcon, FacebookShareButton, LinkedinIcon, LinkedinShareButton } from 'react-share';
 
 const BlogDetails = () => {
   const [blogDetails, setBlogDetails] = useState({});
   const { slug } = useParams();
+
+  const url = window.location.href;
 
 
   useEffect(() => {
@@ -24,14 +27,39 @@ const BlogDetails = () => {
 
   return (
     <div className='bg-neutral'>
-      <div className='max-w-7xl  mx-auto pb-8'>
-        <h1 className='py-10 text-2xl uppercase font-extrabold'>{blogDetails.title}</h1>
-        <div className='mb-8'>
-          <img src={blogDetails.thumbnail} alt="" />
+      <div className='max-w-4xl  mx-auto pb-8'>
+        <div className='pt-8'>
+          <img className='w-full' src={blogDetails.thumbnail} alt="" />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: blogDetails.content }} />
-      </div>
-    </div>
+
+        <h1 className='py-10 text-white text-3xl uppercase font-extrabold'>{blogDetails.title}</h1>
+
+        <div className='flex justify-between pb-8'>
+
+          <div className='text-left'>
+            <h3 className='text-white text-xl mb-4'>Social Share</h3>
+
+            <LinkedinShareButton url={url}>
+              <LinkedinIcon round={true} size={40}></LinkedinIcon>
+            </LinkedinShareButton>
+            <FacebookShareButton url={url} className="ml-2">
+              <FacebookIcon round={true} size={40}></FacebookIcon>
+            </FacebookShareButton>
+          </div>
+
+          <div className='text-right'>
+            <h3 className='text-xl font-mono text-white'>Rasel Ahmmed</h3>
+            <small className='font-sm text-white'>{blogDetails.create_at}</small>
+          </div>
+
+
+        </div>
+
+        <div className='text-white' dangerouslySetInnerHTML={{ __html: blogDetails.content }} />
+
+
+      </div >
+    </div >
   );
 };
 

@@ -57,7 +57,7 @@ function App() {
         <Route path="/contact" element={<ContactMe></ContactMe>}></Route>
         <Route path="/*" element={<Notfound></Notfound>}></Route>
       </Routes>
-      <ToastContainer />
+      <ToastContainer limit={1} />
     </div >
   );
 }

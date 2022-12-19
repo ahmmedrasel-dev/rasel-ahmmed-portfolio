@@ -109,37 +109,37 @@ const SignUp = ({ header }) => {
       </Helmet>
       <div className='md:w-2/6 sm:w-4/6 md:h-82 md:mx-auto flex flex-col justify-center bg-slate-100 border-2 rounded-3xl'>
         <div className='text-center my-8'>
-          <h2 className='text-4xl text-cyan-500'>Rasel Ahmmed</h2>
-          <p className=''>User Register Form using Email & Password.</p>
+          <h2 className='text-4xl text-success'>Rasel Ahmmed</h2>
+          <p className='text-neutral'>User Register Form using Email & Password.</p>
         </div>
 
         <form className='sm:w-4/4 md:w-3/4 mx-auto mt-4' onSubmit={handleSubmit}>
 
-          <input className='block w-full p-3 mb-3 rounded-md text-xl' type="text" name="" id="" placeholder='Full Name' onBlur={handleName} />
+          <input className='block w-full p-3 mb-3 text-neutral rounded-md text-md' type="text" name="" id="" placeholder='Full Name' onBlur={handleName} />
 
           {
             registerError?.name && <strong className='text-red-500'>{registerError.name}</strong>
           }
 
-          <input className='block w-full p-3 rounded-md text-xl' type="email" name="" id="" placeholder='Email' onBlur={handleEmail} />
+          <input className='block w-full p-3 text-neutral rounded-md text-md' type="email" name="" id="" placeholder='Email' onBlur={handleEmail} />
 
           {
             registerError?.email && <strong className='text-red-500'>{registerError.email}</strong>
           }
 
-          <input className='block w-full p-3 my-4 rounded-md text-xl' type="password" name="" id="" placeholder='Password' onChange={handlePassword} />
+          <input className='block w-full p-3 my-4 text-neutral rounded-md text-md' type="password" name="" id="" placeholder='Password' onChange={handlePassword} />
           {
             registerError?.password && <strong className='text-red-500'>{registerError.password}</strong>
           }
 
-          <input className='block w-full p-3 my-4 rounded-md text-xl' type="password" name="" id="" placeholder='Conformation Password' onChange={handleComfirmPassword} />
+          <input className='block w-full p-3 my-4 text-neutral rounded-md text-md' type="password" name="" id="" placeholder='Conformation Password' onChange={handleComfirmPassword} />
 
           {
             registerError?.confirmPassword && <strong className='text-red-500'>{registerError.confirmPassword}</strong>
           }
 
-          <button className='w-full bg-sky-500 p-3 mb-4 rounded-md text-xl text-white'>Register</button>
-          <p className='text-center mb-2'>Already Have an account? <Link className='underline text-blue-400' to='/login'>Login.</Link></p>
+          <button className='w-full bg-success p-3 mb-4 rounded-md text-xl text-white'>Register</button>
+          <p className='text-center mb-2 text-neutral'>Already Have an account? <Link className='underline text-success' to='/login'>Login.</Link></p>
         </form>
 
       </div>
