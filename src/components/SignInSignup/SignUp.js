@@ -105,7 +105,7 @@ const SignUp = ({ header }) => {
   return (
     <div className='md:p-20 bg-neutral h-screen'>
       <Helmet>
-        <title>Registe | Rasel Ahmmed Webdeveloepr</title>
+        <title>Register | Rasel Ahmmed Web Developer</title>
       </Helmet>
       <div className='md:w-2/6 sm:w-4/6 md:h-82 md:mx-auto flex flex-col justify-center bg-slate-100 border-2 rounded-3xl'>
         <div className='text-center my-8'>

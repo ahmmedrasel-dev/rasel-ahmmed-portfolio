@@ -1,14 +1,16 @@
-import React, { useRef, useState } from 'react';
-import { Editor } from '@tinymce/tinymce-react';
+import axios from 'axios';
+import React, { useState, useRef, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { useForm } from 'react-hook-form';
+import { useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
-import axiosPrivate from '../../Api/AxiosPrivate';
 import slugify from 'react-url-slugify';
-
-const NewPost = () => {
+import axiosPrivate from '../../Api/AxiosPrivate';
+import { Editor } from '@tinymce/tinymce-react';
+import { useForm } from 'react-hook-form';
+const EditBlogs = () => {
+  const [blog, setBlog] = useState({});
   const editorRef = useRef(null);
-
+  const { id } = useParams();
   const [content, setContent] = useState('');
   let currentDate = new Date().toJSON().slice(0, 10);
 
@@ -68,10 +70,25 @@ const NewPost = () => {
       })
   }
 
+
+
+  useEffect(() => {
+    const getDetails = async () => {
+      const { data } = await axios.get(`http://localhost:5000/blogs/${id}`);
+      setBlog(data);
+    }
+    getDetails()
+  }, [id]);
+
+
+
+
+
+
   return (
     <>
       <Helmet>
-        <title>Add Blog</title>
+        <title>Edit Blog</title>
       </Helmet>
       <div className='md:p-8 h-screen'>
 
@@ -156,8 +173,7 @@ const NewPost = () => {
         </div>
       </div>
     </>
-
   );
 };
 
-export default NewPost;
+export default EditBlogs;

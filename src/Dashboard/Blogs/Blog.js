@@ -1,9 +1,21 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import DeleteConfirmModal from '../../components/Shared/DeleteConfirmModal';
 
 const Blog = ({ blog, sl, refetch }) => {
   const { title, category, thumbnail } = blog;
   const [deleteBlog, setDeleteBlog] = useState(null);
+  const navigate = useNavigate();
+
+  const handleReadView = slug => {
+    navigate(`/blog/${slug}`);
+  }
+  const handleBlogEdit = (blog) => {
+    const id = blog._id
+    navigate(`/dashboard/blogEdit/${id}`);
+  }
+
+
   return (
     <>
       <tr>
@@ -18,8 +30,10 @@ const Blog = ({ blog, sl, refetch }) => {
         <td>{title}</td>
         <td>{category}</td>
         <td>
-          <label htmlFor="delete-modal" className="btn btn-sm bg-green-600">Edit</label>
+
+          <button className='btn btn-sm bg-green-600' onClick={() => handleBlogEdit(blog)}>Edit</button>
           <label htmlFor="delete-modal" onClick={() => setDeleteBlog(blog)} className="btn btn-sm bg-red-600">Delete</label>
+          <button className="btn btn-sm bg-green-600" target="_blank" onClick={() => handleReadView(blog.slug)}>View</button>
         </td>
       </tr>
 

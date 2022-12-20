@@ -37,7 +37,7 @@ const Blogs = () => {
             <th>Images</th>
             <th>Post Title</th>
             <th>Category</th>
-            <th>Action</th>
+            <th className='text-center'>Action</th>
           </tr>
         </thead>
         <tbody>
