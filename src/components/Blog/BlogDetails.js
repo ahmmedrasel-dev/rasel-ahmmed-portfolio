@@ -42,7 +42,7 @@ const BlogDetails = () => {
             <LinkedinShareButton url={url}>
               <LinkedinIcon round={true} size={40}></LinkedinIcon>
             </LinkedinShareButton>
-            <FacebookShareButton url={url} className="ml-2">
+            <FacebookShareButton url={url} quote={blogDetails.title} className="ml-2">
               <FacebookIcon round={true} size={40}></FacebookIcon>
             </FacebookShareButton>
           </div>

@@ -33,7 +33,7 @@ const Blog = ({ blog, sl, refetch }) => {
 
           <button className='btn btn-sm bg-green-600' onClick={() => handleBlogEdit(blog)}>Edit</button>
           <label htmlFor="delete-modal" onClick={() => setDeleteBlog(blog)} className="btn btn-sm bg-red-600">Delete</label>
-          <button className="btn btn-sm bg-green-600" target="_blank" onClick={() => handleReadView(blog.slug)}>View</button>
+          <button className="btn btn-sm bg-green-600" onClick={() => handleReadView(blog.slug)}>View</button>
         </td>
       </tr>
 
